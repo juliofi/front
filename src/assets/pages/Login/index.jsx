@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 const Login = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Findi</h1>
+      <h1 className={styles.title}>Findt</h1>
         <form className={styles.form}>
           <input
             type="text"
