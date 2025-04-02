@@ -1,11 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import styles from './styles.module.css';
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); 
+    navigate('/search'); 
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Findt</h1>
-        <form className={styles.form}>
+        <form onSubmit={handleSubmit} className={styles.form}>
           <input
             type="text"
             className={styles.input}
@@ -16,7 +25,7 @@ const Login = () => {
             className={styles.input}
             placeholder="password"
           />
-          <button className={styles.button}>login</button>
+          <button type="submit" className={styles.button}>login</button>
         </form>
       </div>
   );

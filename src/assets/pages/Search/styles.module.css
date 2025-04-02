@@ -14,3 +14,19 @@
     cursor: pointer;
     user-select: none;
   }
+
+  .searchbar{
+    margin-top: 8px;
+    font-family: "Roboto", sans-serif;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 8px;
+    width: 360px;
+    background-color: transparent;
+    color: #000000;
+  }
+
+  .searchbar:focus{
+    outline: none;
+  }
